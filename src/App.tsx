@@ -2,12 +2,16 @@ import React from 'react';
 import './App.css';
 import { Header } from './components/Header/index'
 import { SideBar } from './components/SideBar/index'
+import { Page1 } from './components/Page1/index'
 
 function App() {
   return (
     <>
       <Header />
-      <SideBar />
+      <div className="main-content">
+        <SideBar />
+        <Page1 />
+      </div>
     </>
   );
 }
@@ -39,5 +43,9 @@ lateral aparece que step vc esta
 Pagina 4:
 display dos dados coletados nas ultimas paginas / se voltar e trocar os dados, os mesmos são atualizados na ultima
 lateral aparece que step vc esta
+
+
+Check Traversy Routes
+https://github.com/bradtraversy/react-crash-2021/blob/master/src/App.js
 
 */
