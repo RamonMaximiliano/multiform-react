@@ -22,6 +22,8 @@ export default App;
 
 /*
 
+Manter base components estaticos e navegar entre paginas
+
 Pagina 1: 
 colocar nome nos dados 
 botão next
