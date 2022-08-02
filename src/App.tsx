@@ -48,4 +48,8 @@ lateral aparece que step vc esta
 Check Traversy Routes
 https://github.com/bradtraversy/react-crash-2021/blob/master/src/App.js
 
+
+colocar media, quando dominui tela, components da direita passam para baixo
+
+
 */
