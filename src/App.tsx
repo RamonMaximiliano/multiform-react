@@ -1,8 +1,12 @@
 import React from 'react';
 import './App.css';
 import { Header } from './components/Header/index'
+import { Route, Routes, Link } from 'react-router-dom'
 import { SideBar } from './components/SideBar/index'
 import { Page1 } from './components/Page1/index'
+import { Page2 } from './components/Page2/index'
+import { Page3 } from './components/Page3/index'
+import { Page4 } from './components/Page4/index'
 
 function App() {
   return (
@@ -10,7 +14,12 @@ function App() {
       <Header />
       <div className="main-content">
         <SideBar />
-        <Page1 />
+        <Routes>
+          <Route path="/" element={<Page1/>}/>
+          <Route path="/Page2" element={<Page2/>}/>
+          <Route path="/Page3" element={<Page3/>}/>
+          <Route path="/Page4" element={<Page4/>}/>
+        </Routes>
       </div>
     </>
   );
@@ -22,7 +31,7 @@ export default App;
 
 /*
 
-Manter base components estaticos e navegar entre paginas
+Verificar estilisação dos botões de navegação pois esta precisando clicar exatamente em cima do texto devido ao Link tag
 
 Pagina 1: 
 colocar nome nos dados 

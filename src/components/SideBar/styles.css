@@ -4,7 +4,7 @@
     color:white;
     font-family:'Roboto', sans-serif;
     margin-left:15%;
-    max-width: 20%;
+    max-width: 300px;
     border-right: 1px solid  rgba(255, 255, 255, 0.219);
     padding-top:3%;
     padding-right:3%;
@@ -12,8 +12,10 @@
 
 .sidebar-sub-div{
     display:flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    min-width:300px;
     margin-bottom: 20%;
 }
 
@@ -24,9 +26,28 @@
 }
 
 
-.sidebar-sub-div img{
+.image-div{
     background-color:rgba(255, 255, 255, 0.486);
-    width:30%;
+    width:60px;
+    height:60px;
     border-radius: 50%;
-    padding:5%;
+    text-align: center;
+    align-items: center;
+    line-height: 90px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.image{
+    width:40px;
+}
+
+
+.small-dot{
+    width:16px;
+    height: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.486);
+    border-radius: 50%;
+    margin-right:-7px;
+
 }
