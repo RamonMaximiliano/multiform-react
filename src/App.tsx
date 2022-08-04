@@ -55,6 +55,8 @@ Pagina 4:
 display dos dados coletados nas ultimas paginas / se voltar e trocar os dados, os mesmos são atualizados na ultima
 lateral aparece que step vc esta
 
+Pegar foto e nome do github
+
 
 Check Traversy Routes
 https://github.com/bradtraversy/react-crash-2021/blob/master/src/App.js

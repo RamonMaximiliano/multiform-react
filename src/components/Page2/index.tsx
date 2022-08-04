@@ -28,12 +28,13 @@ export const Page2 = () => {
             </div>
 
             <div className="page2-bottom-div">
-                <Link to="/Page3">
-                    <button className="page2-buttom">Próximo</button>
-                </Link>
                 <Link to="/">
                     <button className="page2-buttom">Voltar</button>
                 </Link>
+                <Link to="/Page3">
+                    <button className="page2-buttom">Próximo</button>
+                </Link>
+
             </div>
         </div>
 
