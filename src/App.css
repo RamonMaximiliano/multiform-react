@@ -10,5 +10,6 @@ body{
 
 .main-content{
   display:flex;
+  flex-wrap: wrap;
 }
 

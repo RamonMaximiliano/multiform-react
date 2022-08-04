@@ -2,6 +2,7 @@ import './styles.css'
 import Profile from "../../images/profile.svg"
 import Mail from "../../images/mail.svg"
 import Book from "../../images/book.svg"
+import Trophy from "../../images/trophy.png"
 
 export const SideBar = () => {
     return (
@@ -43,7 +44,7 @@ export const SideBar = () => {
                     <p>Seu perfil completo</p>
                 </div>
                 <div className="image-div">
-                <img alt="ProfilePic" src={Profile} className="image"/>
+                <img alt="ProfilePic" src={Trophy} className="image"/>
                 </div>
                 <div className="small-dot"></div>
             </div>

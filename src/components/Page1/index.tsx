@@ -12,7 +12,11 @@ export const Page1 = () => {
             <div className="page1-bottom">
                 <p>Seu nome completo</p>
                 <input type="text" className="input-name"></input><br/>
-                <button className="page1-buttom"><Link to="/Page2" className="linkButton">Próximo</Link></button>
+               
+                <Link to="/Page2" className="linkButton">
+                    <button className="page1-buttom">Próximo
+                    </button>
+                    </Link>
             </div>
         </div>
 
