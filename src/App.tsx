@@ -1,18 +1,43 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import { Header } from './components/Header/index'
-import { Route, Routes, Link } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import { SideBar } from './components/SideBar/index'
 import { Page1 } from './components/Page1/index'
 import { Page2 } from './components/Page2/index'
 import { Page3 } from './components/Page3/index'
 import { Page4 } from './components/Page4/index'
+import { LoginContext } from '../src/Context/Context'
+
+type FormData = {
+  name?:string,
+  level?:number,
+  email?:string,
+  github?:string,
+  page?:number
+}
+
+const FullProfile:FormData = {
+  name:'Ramon',
+  level:2,
+  email:'ramon@hotmail',
+  github:'fakegithub',
+  page:1
+}
+
+
+console.log(FullProfile)
+
 
 function App() {
+  const [name,setName] = useState<string>()
+
+
   return (
     <>
       <Header />
       <div className="main-content">
+        <LoginContext.Provider value={''}>
         <SideBar />
         <Routes>
           <Route path="/" element={<Page1/>}/>
@@ -20,6 +45,7 @@ function App() {
           <Route path="/Page3" element={<Page3/>}/>
           <Route path="/Page4" element={<Page4/>}/>
         </Routes>
+        </LoginContext.Provider>
       </div>
     </>
   );
@@ -28,10 +54,19 @@ function App() {
 export default App;
 
 
-
 /*
 
-Verificar estilisação dos botões de navegação pois esta precisando clicar exatamente em cima do texto devido ao Link tag
+No onclick ele precisa:
+Coletar o nome e colocar no profile 
+mostrar o nome na proxima pagina
+mostrar em qual step o user esta na proxima pagina
+
+
+Context video
+https://www.youtube.com/watch?v=sP7ANcTpJr8&ab_channel=PedroTech
+
+
+
 
 Pagina 1: 
 colocar nome nos dados 
