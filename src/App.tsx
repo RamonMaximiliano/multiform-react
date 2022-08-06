@@ -29,7 +29,7 @@ const FullProfile:FormData = {
 console.log(FullProfile)
 
 
-function App() {
+function App() { 
   const [name,setName] = useState<string>()
 
 
