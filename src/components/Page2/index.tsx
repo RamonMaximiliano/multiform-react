@@ -1,12 +1,17 @@
 import './styles.css'
 import { Route, Routes, Link } from 'react-router-dom'
+import {LoginContext} from '../../Context/Context'
+import {useContext} from 'react'
 
 export const Page2 = () => {
+
+    const {FullProfile} = useContext(LoginContext)
+
     return (
         <div className="main-page2">
             <div className="page2-top">
-                <p>Passo 2/4</p>
-                <h1>Nome, o que melhor descreve você?</h1>
+                <p>Passo {FullProfile.page}/4</p>
+                <h1>{FullProfile.name}, o que melhor descreve você?</h1>
                 <p>Escolha a opção que melhor condiz com seu estado atual, profissionalmente</p>
             </div>
 

@@ -11,33 +11,33 @@ import { LoginContext } from '../src/Context/Context'
 
 type FormData = {
   name?:string,
-  level?:number,
+  professional_level?:number,
   email?:string,
   github?:string,
   page?:number
 }
 
-const FullProfile:FormData = {
-  name:'Ramon',
-  level:2,
-  email:'ramon@hotmail',
-  github:'fakegithub',
-  page:1
-}
-
-
-console.log(FullProfile)
-
-
 function App() { 
   const [name,setName] = useState<string>()
+  const [professional_level,setProfessionalLevel] = useState<number>()
+  const [email,setEmail] = useState<string>()
+  const [github,setGithub] = useState<string>()
+  const [page,setPage] = useState<number>(1)
 
+  const FullProfile:FormData = {
+    name:name,
+    professional_level:professional_level,
+    email:email,
+    github:github,
+    page:page
+  }
+  console.log(FullProfile)
 
   return (
     <>
       <Header />
       <div className="main-content">
-        <LoginContext.Provider value={''}>
+        <LoginContext.Provider value={{setName,setProfessionalLevel,setEmail,setGithub,setPage,FullProfile}}>
         <SideBar />
         <Routes>
           <Route path="/" element={<Page1/>}/>
@@ -50,22 +50,13 @@ function App() {
     </>
   );
 }
-
 export default App;
 
 
 /*
 
-No onclick ele precisa:
-Coletar o nome e colocar no profile 
-mostrar o nome na proxima pagina
-mostrar em qual step o user esta na proxima pagina
-
-
-Context video
+Context Learning video
 https://www.youtube.com/watch?v=sP7ANcTpJr8&ab_channel=PedroTech
-
-
 
 
 Pagina 1: 
@@ -79,6 +70,7 @@ se voltar na pagina 1 e trocar, na pagina 2 o nome atual aparece
 botão next e botão voltar
 lateral aparece que step vc esta
 escolhe se iniciante ou não
+Ao voltar, atualizar o page em que esta
 
 Pagina 3: 
 aparece nome colocado na pagina 1 
