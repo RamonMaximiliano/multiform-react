@@ -18,9 +18,9 @@ export const Page1 = () => {
         if (pageName == '' || pageName == undefined) {
             alert('Digite seu nome!')
         } else {
-            navigate('/Page2')
             setName(pageName)
             setPage(2)
+            navigate('/Page2')
         }
     }
 

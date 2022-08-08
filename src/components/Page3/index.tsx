@@ -1,33 +1,50 @@
 import './styles.css'
-import { Route, Routes, Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { useContext,useState } from 'react'
+import {LoginContext} from '../../Context/Context'
 
 export const Page3 = () => {
+    const navigate = useNavigate()
+    const {FullProfile, setEmail, setGithub, setPage}  = useContext(LoginContext)
+
+    function navigateBack(){
+        setEmail('')
+        setGithub('')
+        setPage(2)
+        navigate('/Page2')
+    }
+
+    function navigateForward(){
+        if(FullProfile.email == '' || FullProfile.email == undefined || FullProfile.github == '' || FullProfile.github == undefined){
+            alert('Please fulfill the boxes')
+        } else {
+            setPage(4)
+            navigate('/Page4')
+        }
+    }
+
     return (
         <div className="main-page3">
             <div className="page3-top">
-                <p>Passo 3/4</p>
-                <h1>Legal NOME, onde te achamos?</h1>
+                <p>Passo {FullProfile.page}/4</p>
+                <h1>Legal {FullProfile.name}, onde te achamos?</h1>
                 <p>Preencha com seus contatos para conseguirmos entrar em contato</p>
             </div>
 
             <div className="page3-inputs">
                 <div className="page3-input">
                     <p>Qual seu e-mail?</p>
-                    <input type="text" className="input-field"></input>
+                    <input type="text" className="input-field" onChange={(e)=> setEmail(e.target.value) }></input>
                 </div>
                 <div className="page3-input">
                     <p>Qual seu GitHub?</p>
-                    <input type="text" className="input-field"></input>
+                    <input type="text" className="input-field" onChange={(e)=> setGithub(e.target.value) }></input>
                 </div>
             </div>
 
             <div className="page3-bottom-div">
-                <Link to="/Page2">
-                    <button className="page3-buttom">Voltar</button>
-                </Link>
-                <Link to="/Page4">
-                    <button className="page3-buttom-next">Finalizar cadastro</button>
-                </Link>
+                    <button className="page3-buttom" onClick={navigateBack}>Voltar</button>
+                    <button className="page3-buttom-next" onClick={navigateForward}>Finalizar cadastro</button>
             </div>
         </div>
 
