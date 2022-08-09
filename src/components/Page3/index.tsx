@@ -1,6 +1,6 @@
 import './styles.css'
 import { useNavigate } from 'react-router-dom'
-import { useContext,useState } from 'react'
+import { useContext } from 'react'
 import {LoginContext} from '../../Context/Context'
 
 export const Page3 = () => {
@@ -37,8 +37,8 @@ export const Page3 = () => {
                     <input type="text" className="input-field" onChange={(e)=> setEmail(e.target.value) }></input>
                 </div>
                 <div className="page3-input">
-                    <p>Qual seu GitHub?</p>
-                    <input type="text" className="input-field" onChange={(e)=> setGithub(e.target.value) }></input>
+                    <p>Qual seu usuário de GitHub?</p>
+                    <input type="text" className="input-field" onChange={(e)=> setGithub(`https://api.github.com/users/${e.target.value}`) }></input>
                 </div>
             </div>
 

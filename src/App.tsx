@@ -55,41 +55,10 @@ export default App;
 
 /*
 
-Context Learning video
-https://www.youtube.com/watch?v=sP7ANcTpJr8&ab_channel=PedroTech
+Lateral atualizar conforme step que vc esta
+Validar campo e-mail
 
-
-Pagina 1: 
-colocar nome nos dados 
-botão next
-lateral aparece que step vc esta
-
-Pagina 2:
-aparece nome colocado na pagina 1 
-se voltar na pagina 1 e trocar, na pagina 2 o nome atual aparece
-botão next e botão voltar
-lateral aparece que step vc esta
-escolhe se iniciante ou não
-Ao voltar, atualizar o page em que esta
-
-Pagina 3: 
-aparece nome colocado na pagina 1 
-add email e github
-botão next e botão voltar
-lateral aparece que step vc esta
-
-Pagina 4:
-display dos dados coletados nas ultimas paginas / se voltar e trocar os dados, os mesmos são atualizados na ultima
-lateral aparece que step vc esta
-
-Pegar foto e nome do github
-
-
-Check Traversy Routes
-https://github.com/bradtraversy/react-crash-2021/blob/master/src/App.js
-
-
-colocar media, quando dominui tela, components da direita passam para baixo
+Verificar impedir de abrir as routes direto na aba do navegador
 
 
 */
