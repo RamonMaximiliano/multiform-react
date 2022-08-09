@@ -75,3 +75,7 @@
     border-radius: 30px;
     margin-right:20px;
 }
+
+.active{
+    border:2px solid rgb(105, 201, 105);
+}
