@@ -15,14 +15,14 @@ export const Page2 = () => {
         setActiveLevel2(false)
         setProfessionalLevel(1)
     }
-    let toogleLevel1 = level1div ? "active":"";
+    let toogleLevel1 = level1div ? "active" : "";
 
     function level2() {
         setActiveLevel2(true)
         setActiveLevel1(false)
         setProfessionalLevel(2)
     }
-    let toogleLevel2 = level2div ? "active":"";
+    let toogleLevel2 = level2div ? "active" : "";
 
     function backPage() {
         setProfessionalLevel('')

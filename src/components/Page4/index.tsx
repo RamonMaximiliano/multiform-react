@@ -35,7 +35,7 @@ export const Page4 = () => {
                 <div className="profile-subdiv1">
                     <p>Passo {FullProfile.page}/4</p>
                     <h1>Profile</h1>
-                    <img src={picture} className="profile-picture"></img>
+                    <img src={picture} className="profile-picture" alt="This profile does not exist!"></img>
                 </div>
                 <div className="profile-subdiv2">
                     <p><strong>Nome: </strong>{FullProfile.name}</p>

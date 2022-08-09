@@ -9,10 +9,10 @@ export const Page1 = () => {
     const [pageName, setPageName] = useState<string>()
 
     //métodos de state importados do App através do context
-    const {setName} = useContext(LoginContext)
-    const {setPage} = useContext(LoginContext)
-    const {FullProfile} = useContext(LoginContext)
-    
+    const { setName } = useContext(LoginContext)
+    const { setPage } = useContext(LoginContext)
+    const { FullProfile } = useContext(LoginContext)
+
     //função acionada com o onClick do button
     function setEntireName() {
         if (pageName == '' || pageName == undefined) {

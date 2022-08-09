@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@600&family=Poppins:wght@400;700;800&family=Roboto:wght@400;500;700&display=swap');
 
-.main-page2{
-    color:white;
-    font-family:'Roboto', sans-serif;
+.main-page2 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
     word-wrap: normal;
-    margin-top:3%;
-    margin-left:4%;
-    margin-right:10px;
+    margin-top: 3%;
+    margin-left: 4%;
+    margin-right: 10px;
     margin-bottom: 10px;
 }
 
-.page2-top{
-    max-width:550px;
+.page2-top {
+    max-width: 550px;
     font-size: 15px;
     line-height: 40px;
     min-height: 150px;
@@ -21,61 +21,61 @@
 }
 
 
-.page2-buttom{
+.page2-buttom {
     background-color: rgb(66, 182, 66);
-    color:white;
+    color: white;
     height: 50px;
-    width:120px;
+    width: 120px;
     border-radius: 30px;
-    margin-top:30px;
-    border:none;
-    cursor:pointer;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
     margin-right: 10px;
     font-weight: bold;
-    font-size:15px;
+    font-size: 15px;
     text-decoration: none;
 
 }
 
-.page2-buttom:hover{
+.page2-buttom:hover {
     background-color: rgb(105, 201, 105);
 }
 
 
 
-.page2-options{
-    max-width:500px;
-    margin-top:30px;
+.page2-options {
+    max-width: 500px;
+    margin-top: 30px;
 }
 
-.sub-page2-options{
-    display:flex;
+.sub-page2-options {
+    display: flex;
     word-wrap: normal;
     align-items: center;
     line-height: 30px;
-    font-size:15px;
+    font-size: 15px;
     border: 2px solid rgba(255, 255, 255, 0.219);
-    margin-bottom:20px;
-    padding:15px;
-    border-radius:10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
 }
 
-.sub-page2-options:hover{
-    border:2px solid rgb(105, 201, 105);
+.sub-page2-options:hover {
+    border: 2px solid rgb(105, 201, 105);
 }
 
-.page2-icon{
-    width:60px;
+.page2-icon {
+    width: 60px;
     height: 60px;
-    font-size:30px;
+    font-size: 30px;
     background-color: rgba(255, 255, 255, 0.219);
     align-items: center;
     text-align: center;
-    padding-top:15px;
+    padding-top: 15px;
     border-radius: 30px;
-    margin-right:20px;
+    margin-right: 20px;
 }
 
-.active{
-    border:2px solid rgb(105, 201, 105);
+.active {
+    border: 2px solid rgb(105, 201, 105);
 }
